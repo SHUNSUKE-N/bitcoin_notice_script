@@ -8,7 +8,7 @@ def get_current_hash
   https.use_ssl = true
   req = Net::HTTP::Get.new(uri.path)
   res = https.request(req)
-  hash = JSON.parse(res.body)
+  JSON.parse(res.body)
 end
 
 def slack_notice(diff:)
