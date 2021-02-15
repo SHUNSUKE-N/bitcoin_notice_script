@@ -20,7 +20,7 @@ last_block_num = File.read('/Users/shunsuke/bitcoin_notice_script/last_height.tx
 latest_block_num = get_current_hash["height"].to_i
 diff = latest_block_num - last_block_num
 
-if diff > 2 || diff < 2
+if diff > 2 || diff < -2
   slack_notice(diff: diff)
   File.write("/Users/shunsuke/bitcoin_notice_script/last_height.txt",latest_block_num)
 end
