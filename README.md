@@ -9,5 +9,5 @@
 [ruby_script.rb](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/ruby_script.rb)  
 
 
-cron_script.txt内に、cron設定を書いている為、
+cron_script.txt内に、cron設定を書いている為、  
 そのコマンドを実行することで、rubyスクリプトを通して1時間に一回slack通知を行ってくれます。
