@@ -13,7 +13,7 @@ end
 
 def slack_notice(diff:)
   slack = Slack::Incoming::Webhooks.new "WEBHOOK_URL", channel: '#notice-channel', username: 'latest-block-notice'
-  slack.post "latest block numberに差分#{diff}のdiff生まれました（form Blockchain Data API）"
+  slack.post "latest block numberに差分#{diff}のdiffが生まれました（form Blockchain Data API）"
 end
 
 last_block_num = File.read('/Users/shunsuke/bitcoin_notice_script/last_height.txt').to_i
