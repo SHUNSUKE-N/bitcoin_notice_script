@@ -3,10 +3,10 @@
 
 付け加えたのは以下4ファイルです
 ----------------
-cron_script.txt
-last_height.txt
-rscript_reader.sh
-ruby_script.rb
+cron_script.txt  
+last_height.txt  
+rscript_reader.sh  
+ruby_script.rb  
 
 
 cron_script.txt内に、cron設定を書いている為、
