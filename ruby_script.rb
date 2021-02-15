@@ -1,19 +1,26 @@
 require 'net/http'
+require 'uri'
 require 'json'
-require 'slack/incoming/webhooks'
 
 def get_current_hash
-  url = URI.parse("https://blockchain.info/latestblock")
-  https = Net::HTTP.new(url.host, url.port)
+  uri = URI.parse("https://blockchain.info/latestblock")
+  https = Net::HTTP.new(uri.host, uri.port)
   https.use_ssl = true
-  req = Net::HTTP::Get.new(url.path)
+  req = Net::HTTP::Get.new(uri.path)
   res = https.request(req)
   hash = JSON.parse(res.body)
 end
 
 def slack_notice(diff:)
-  slack = Slack::Incoming::Webhooks.new "WEBHOOK_URL", channel: '#notice-channel', username: 'latest-block-notice'
-  slack.post "latest block numberに差分#{diff}のdiffが生まれました（form Blockchain Data API）"
+  uri  = URI.parse('WEBHOOK_URL')
+  params = { text: "latest block numberに差分#{diff}のdiffが生まれました（form Blockchain Data API）" }
+  https = Net::HTTP.new(uri.host, uri.port)
+  https.use_ssl = true
+  https.start do
+    request = Net::HTTP::Post.new(uri.path)
+    request.set_form_data(payload: params.to_json)
+    https.request(request)
+  end
 end
 
 last_block_num = File.read('/Users/shunsuke/bitcoin_notice_script/last_height.txt').to_i
