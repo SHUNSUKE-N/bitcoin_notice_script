@@ -1,2 +1,2 @@
 # 以下をcron（$ crontab -e）に記述する
-0 */1 * * * /bin/bash ~/hello.sh
+0 */1 * * * /Users/shunsuke/bitcoin_notice_script/rscript_reader.sh
