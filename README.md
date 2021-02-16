@@ -4,7 +4,7 @@
 付け加えたのは以下4ファイルです
 ----------------
 [cron_script.txt](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/cron_script.txt)  
-[last_height.txt](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/last_height.txt)  
+[last_api.txt](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/last_api.txt)  
 [rscript_reader.sh](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/rscript_reader.sh)  
 [ruby_script.rb](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/ruby_script.rb)  
 

@@ -1,0 +1,1 @@
+{"result":[{"height":670845,"hash":"000000000000000000028d2386c3494933d7d26bee1d74db9e3eff7445e4ca52","branchlen":262031,"status":"headers-only"},{"height":408814,"hash":"00000000000000000251c8e2214bea61042bfca56b084f904ce802396b16ebad","branchlen":0,"status":"active"}],"error":null,"id":"curltest"}
