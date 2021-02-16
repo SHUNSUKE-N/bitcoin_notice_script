@@ -15,7 +15,8 @@ cron_script.txt内に、cron設定を書いている為、
 latest block numberに3以上の差分がある場合のみslack通知を行ってくれます。  
 
 
-利用したAPI：　Blockchain Data API(Latest Block)  
+利用したAPI：  
+Blockchain Data API(Latest Block)  
 https://www.blockchain.com/ja/api/blockchain_api  
 
 
