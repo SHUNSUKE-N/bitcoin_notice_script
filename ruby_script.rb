@@ -24,7 +24,7 @@ def slack_notice(diff:, message:)
 end
 
 last_curl_num = File.read('/Users/shunsuke/bitcoin_notice_script/last_curl.txt').to_i
-latest_curl_num = File.read('/Users/shunsuke/bitcoin_notice_script/latest_curl.txt').split(":")[2].split(",")[0].to_i
+latest_curl_num = File.read('/Users/shunsuke/bitcoin_notice_script/latest_curl.json').split(":")[1].strip.split(",")[0].to_i
 curl_diff = latest_curl_num - last_curl_num
 
 last_api_num = File.read('/Users/shunsuke/bitcoin_notice_script/last_api.txt').to_i

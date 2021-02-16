@@ -1,0 +1,14 @@
+[
+  {
+    "height": 670860,
+    "hash": "0000000000000000000c64b4144c7dbb1b5e74f2cf49b5b6f79db8b42f7e6c20",
+    "branchlen": 255371,
+    "status": "headers-only"
+  },
+  {
+    "height": 415489,
+    "hash": "000000000000000001df8093b6a1da6e44c871a2a85d6417d7157ede40772c9e",
+    "branchlen": 0,
+    "status": "active"
+  }
+]
