@@ -1,12 +1,12 @@
 これはbitcoin coreに通知用スクリプトを加えたソースコードです
 =====================================
 cron_script.txt内に、cronの設定コマンドを記述しています。  
-そのコマンドを実行することでrubyスクリプトを通して1時間に1回、  
+そのコマンドを叩くことでをbashスクリプトを1時間に1回実行し、  
 APIを叩いて取ったブロックとJSON-RPCを実行して取ったブロックを比較し、  
 latest block numberに3以上の差分がある場合のみslack通知を行ってくれます。 
 
 
-以下6ファイルをスクリプトとして加えています
+以下4ファイルをスクリプトとして加えています
 ----------------
 [cron_script.txt](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/cron_script.txt)  
 [rscript_reader.sh](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/rscript_reader.sh)  
