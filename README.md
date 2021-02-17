@@ -4,6 +4,7 @@ cron_script.txt内に、cronの設定コマンドを記述しています。
 そのコマンドを叩くことでをbashスクリプトを1時間に1回実行し、  
 APIを叩いて取ったブロックとJSON-RPCを実行して取ったブロックを比較し、  
 latest block numberに3以上の差分がある場合のみslack通知を行ってくれます。 
+（スクリプト内の階層パスについては、環境毎に要調整）  
 
 
 [cron_script.txt](https://github.com/SHUNSUKE-N/bitcoin_notice_script/blob/master/cron_script.txt)  
