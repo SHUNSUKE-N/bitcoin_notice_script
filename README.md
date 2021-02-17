@@ -28,11 +28,13 @@ cron指示を記述したコピーファイルです。
 
 rscript_reader.sh
 ----------------
-bashスクリプトを記述しています。JSON-RPCを実行後、jsonデータをlatest_curl.jsonに格納し、ruby_script.rbを呼び出します。  
+bashスクリプトを記述しています。  
+JSON-RPCを実行後、jsonデータをlatest_curl.jsonに格納し、ruby_script.rbを呼び出します。  
 
 ruby_script.rb
 ----------------
-rubyスクリプトを記述しています。Blockchain Data APIを叩き、その後、条件に応じてメッセージをslackに通知します。   
+rubyスクリプトを記述しています。  
+Blockchain Data APIを叩き、その後、条件に応じてメッセージをslackに通知します。   
 
 latest_curl.json
 ----------------
