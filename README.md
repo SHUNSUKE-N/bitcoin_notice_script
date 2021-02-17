@@ -24,6 +24,9 @@ Blockchain Data APIを叩き、その後、条件に応じてメッセージをs
 ----------------
 rscript_reader.shでJSON-RPCを実行して取得した値を格納します。  
 
+
+参照元 
+----------------
 利用したAPI：  
 Blockchain Data API(Latest Block)  
 https://www.blockchain.com/ja/api/blockchain_api  
